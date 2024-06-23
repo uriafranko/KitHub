@@ -23,7 +23,7 @@ def example_tool_with_args(x: int, y: int):
 def get_app():
     # Register endpoints
     kit = create_kit(
-        prefix="/v1", tools=[example_function, example_tool, example_tool_with_args]
+        prefix="/example", tools=[example_function, example_tool, example_tool_with_args]
     )
 
     return create_kithub([kit])

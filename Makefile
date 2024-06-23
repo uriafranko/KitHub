@@ -1,6 +1,6 @@
 run-tests:
 	# @echo "Running tests..."
-	pytest tests/test_kithub.py
+	poetry run pytest tests/test_kithub.py
 
 run-local:
 	@echo "Running local server..."

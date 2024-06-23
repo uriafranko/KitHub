@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "KitHub"
-version = "0.1.0"
+version = "0.1.1"
 description = "KitHub is a powerful framework for creating and managing tool-based APIs. It integrates seamlessly with LangChain tools and provides a simple interface for exposing these tools as API endpoints."
 authors = ["Uria Franko <uriafranko@gmail.com>"]
 packages = [
@@ -8,12 +8,16 @@ packages = [
 ]
 license = "MIT"
 readme = "README.md"
+keywords = ["langchain", "api", "fastapi", "tool"]
+classifiers = []
+
 
 [tool.poetry.dependencies]
 python = "^3.9"
 fastapi = "^0.111.0"
 langchain-core = "^0.2.9"
 langchain-community = "^0.2.5"
+openapi-spec-validator = "^0.7.1"
 
 [tool.poetry.dev-dependencies]
 mypy = "1.10.0"
